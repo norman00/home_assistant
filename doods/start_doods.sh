@@ -11,3 +11,5 @@ docker run -p 8080:8080 --name doods_front --detach snowzach/doods:latest
 docker run -p 8081:8080 --name doods_back --detach snowzach/doods:latest
 # doods.cam_hall
 docker run -p 8082:8080 --name doods_hall --detach snowzach/doods:latest
+# doods.cam_terrace
+docker run -p 8083:8080 --name doods_terrace --detach snowzach/doods:latest

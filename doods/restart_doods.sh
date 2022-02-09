@@ -14,6 +14,8 @@ sudo docker stop doods_front && sudo docker rm doods_front >> $LOG
 sudo docker stop doods_back && sudo docker rm doods_back >> $LOG
 # doods.cam_hall
 sudo docker stop doods_hall && sudo docker rm doods_hall >> $LOG
+# doods.cam_terrace
+sudo docker stop doods_terrace && sudo docker rm doods_terrace >> $LOG
 
 # Restart docker service
 sudo systemctl restart docker.service >> $LOG
@@ -26,5 +28,7 @@ sudo docker run -p 8080:8080 --name doods_front --detach snowzach/doods:latest >
 sudo docker run -p 8081:8080 --name doods_back --detach snowzach/doods:latest >> $LOG
 # doods.cam_hall
 sudo docker run -p 8082:8080 --name doods_hall --detach snowzach/doods:latest >> $LOG
+# doods.cam_terrace
+sudo docker run -p 8083:8080 --name doods_terrace --detach snowzach/doods:latest >> $LOG
 
 echo "---------------------------------------------------" >> $LOG

@@ -11,3 +11,7 @@ docker stop doods_back && docker rm doods_back
 # doods.cam_hall
 #docker run -p 8082:8080 --name doods_hall --detach snowzach/doods:latest
 docker stop doods_hall && docker rm doods_hall
+
+# doods.cam_terrace
+#docker run -p 8083:8080 --name doods_terrace --detach snowzach/doods:latest
+docker stop doods_terrace && docker rm doods_terrace
